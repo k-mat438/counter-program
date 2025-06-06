@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function updateDisplay() {
     counterDisplay.textContent = count;
 
-    if (count > 30 && !flag) {
+    if (count > 3000 && !flag) {
       flag = true;
       alert("おめでとうございます！🎉\nカウンターが3000に到達しました！");
     }
