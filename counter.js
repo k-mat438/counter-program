@@ -1,7 +1,7 @@
 "use strict";
 
 document.addEventListener('DOMContentLoaded', () => {
-  alert("ようこそ！カウンターアプリへ！\n\nこのアプリでは、カウンターを増減させたり、リセットしたりできます。3000万に到達すると、老後の問題が解決するかもしれません。-200万円で破産になります");
+  alert("ようこそ！カウンターアプリへ！\n\nこのアプリでは、カウンターを増減させたり、リセットしたりできます。1000万に到達すると、老後の問題が解決するかもしれません。-200万円で破産になります");
 
   let count = 0;
   let flag = false;
@@ -17,13 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
   function updateDisplay() {
     counterDisplay.textContent = count;
 
-    if (count > 3000 && !flag) {
+    if (count > 1000 && !flag) {
       flag = true;
       alert("おめでとうございます！🎉\nカウンターが3000に到達しました！");
     }
     if (count < -200) {
-      alert("破産しました！-200万円を超えました。");
-      count = 0;
+      alert("破産しました！-200万円を超えました。\n残念...");
+      window.location.href = 'bankruptcy.html';
     }
   }
 
