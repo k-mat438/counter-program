@@ -19,8 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (count > 1000 && !flag) {
       flag = true;
-      alert("おめでとうございます！🎉\nカウンターが3000に到達しました！");
+      alert("おめでとうございます！🎉\n1000万円を達成しました！\n億万長者への道が開かれました！");
+      window.location.href = 'millionaire.html';
     }
+    
     if (count < -200) {
       alert("破産しました！-200万円を超えました。\n残念...");
       window.location.href = 'bankruptcy.html';
